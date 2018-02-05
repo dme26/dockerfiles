@@ -1,8 +1,6 @@
-FROM debian:stretch-slim
+FROM dme26/latex:latest
 
 RUN apt-get update && apt-get install -y \
-		biber \
-		latexmk \
-		make \
-		texlive-full \
+		curl \
 	&& rm -rf /var/lib/apt/lists/*
+
